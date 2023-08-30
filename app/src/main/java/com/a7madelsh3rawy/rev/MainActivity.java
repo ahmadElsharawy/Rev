@@ -1,7 +1,6 @@
 package com.a7madelsh3rawy.rev;
 
-import android.content.res.Configuration;
-import android.content.res.Resources;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -9,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.a7madelsh3rawy.rev.databinding.ActivityMainBinding;
 
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,20 +19,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mainBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(mainBinding.getRoot());
+        Bundle bundle = new Bundle();
+        Intent intent = new Intent(this, MainActivity2.class);
+        bundle.putString("k", "kkkkkkkkkkkkkkkkkkk");
+        intent.putExtras(bundle);
         mainBinding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Locale newLocale = new Locale("ar");
-                Resources resources = getResources();
-                Configuration configuration = resources.getConfiguration();
-                configuration.setLocale(newLocale);
-                resources.updateConfiguration(configuration, resources.getDisplayMetrics());
 
-
-                recreate();
+                startActivity(intent);
             }
         });
-
     }
 
 
