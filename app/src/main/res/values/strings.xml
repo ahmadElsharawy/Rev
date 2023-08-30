@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Rev</string>
+    <string name="rec_height">height</string>
+    <string name="rec_width">width</string>
+    <string name="tra_base">base</string>
+    <string name="tra_height">height</string>
+    <string name="calc">Calc</string>
+    <string name="shape_selected_rectangle">rectangle</string>
+    <string name="shape_selected_circle">circle</string>
+    <string name="shape_selected_triangle">triangle</string>
+    <string name="radius">radius</string>
+    <string name="shape_selected_default">error</string>
+    <string name="textview">TextView</string>
+    <string-array name="spinner_item" >
+        <item>rectangle</item>
+        <item>circle</item>
+        <item>triangle</item>
+    </string-array>
+</resources>

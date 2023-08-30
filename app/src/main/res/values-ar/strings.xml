@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rev</string>
+    <string name="rec_height">طول</string>
+    <string name="rec_width">عرض</string>
+    <string name="tra_base">قاعده</string>
+    <string name="tra_height">ارتفاع</string>
+    <string name="calc">احسب</string>
+    <string-array name="spinner_item" >
+        <item>المستطيل</item>
+        <item>الدائره</item>
+        <item>المثلث</item>
+    </string-array>
+    <string name="shape_selected_rectangle">المستطيل</string>
+    <string name="shape_selected_circle">الدائره</string>
+    <string name="shape_selected_triangle">المثلث</string>
+    <string name="radius">قطر الدائره</string>
+    <string name="shape_selected_default">خطا</string>
+    <string name="textview">مرحبا</string>
+
+</resources>
